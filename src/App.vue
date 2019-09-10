@@ -1,11 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<div id="nav">
+			<router-link to="/">Home</router-link> |
+			<router-link to="/cats">Cats</router-link> | 
+			<router-link to="/dogs">Dogs</router-link> | 
+			<router-link to="/pet">Pet</router-link>
+		</div>
+
+		<b-container>
+			<router-view/>
+		</b-container>
+	</div>
 </template>
 
 <style lang="scss">
